@@ -5,8 +5,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  background-color:hsla(212, 32%, 52%, 0.233);
+html {
+  background-color: hsla(212, 32%, 52%, 0.233);
   /* smooth scroll */
   scroll-behavior: smooth;
 }
@@ -135,16 +135,15 @@ a:active {
   padding-bottom: 0.2rem;
   letter-spacing: 5px;
   color: aliceblue;
-  font-weight:bolder;
+  font-weight: bolder;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow:3px 3px 3px #000;
+  text-shadow: 3px 3px 3px #000;
   /* background-image: url(../images/clip.jpg);
    background-size: contain;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;  */
- 
 }
 .hero_viewport button {
   display: block;
@@ -179,7 +178,6 @@ h4 {
   text-decoration: underline;
   margin: 0 auto;
   opacity: 0;
-  
 
   /* ||||UNECESSARY ANIMATION -IT SHOULD JUST BE A SIMPLE DUMMY */
   /* animation: fadingin 4s ease 8s forwards; */
@@ -467,10 +465,9 @@ fieldset button {
 .footer__address {
   columns: 2 250px;
   column-gap: 1rem;
-  text-align:center;
+  text-align: center;
   /* column border */
   column-rule: 4px double var(--ALTBGCOLOR);
-  
 }
 .copy {
   column-span: all;
@@ -478,17 +475,16 @@ fieldset button {
   color: white;
   background-color: #000;
 }
-.top{
-  width:50px;
-  height:50px;
-  position:fixed;
-  border-radius:50%;
-  background-color:green;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
+.top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.backtotop{
- margin-left:calc(var(--PADDING) + 400px);
+.backtotop {
+  margin-left: calc(var(--PADDING) + 400px);
 }
