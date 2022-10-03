@@ -192,3 +192,22 @@ nav {
     flex-grow: 1;
 
 }
+#more-about h2{
+    font-size: var(--FS-XXL);
+    text-align: center;
+    color: var(--ALTBGCOLOR);
+    padding: var(--PADDING) 2rem;
+    margin-top: 0;
+    text-shadow: 3px 3px 3px #000;
+}
+#more-about .special h2{
+    font-style:italic;
+    text-decoration:underline
+}
+#more-about p{
+    font-size: var(--FS);
+    text-align: center;
+    color: var(--FC);
+    padding: var(--PADDING) 2rem;
+    margin-top: 0;
+}
