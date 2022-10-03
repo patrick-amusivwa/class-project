@@ -179,7 +179,9 @@ h4 {
   text-decoration: underline;
   margin: 0 auto;
   opacity: 0;
-  transform: transalteY(4rem);
+  
+
+  /* ||||UNECESSARY ANIMATION -IT SHOULD JUST BE A SIMPLE DUMMY */
   /* animation: fadingin 4s ease 8s forwards; */
 }
 /* .vid-clip {
