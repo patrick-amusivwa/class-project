@@ -113,6 +113,7 @@ nav {
   text-shadow: 3px 3px 3px #000;
 }
 .about {
+    margin:0 3rem;
   min-height: 100vh;
   flex-grow: 1;
   display: grid;
@@ -120,10 +121,11 @@ nav {
   grid-auto-rows: 80px auto 75px;
   grid-template-areas:
     "hd hd "
-    "im1 h2 "
+    "im1 h3 "
     "im2 p ";
   gap: 2rem;
   position: relative;
+  border-bottom:var(--BORDER)
 }
 .about h2 {
   grid-area: hd;
@@ -140,4 +142,53 @@ nav {
   height: auto;
   border-radius: var(--BORDER-RADIUS);
   margin-left: 4rem;
+
+}
+.about img:nth-child(1) {
+  grid-area: im1;
+  top: 0;
+  left: 0;
+  transform:rotate(10deg);
+}
+.about img:nth-child(2) {
+  grid-area: im2;
+  bottom: 0;
+  right: 0;
+  transform:rotate(-20deg);
+}
+.about h3{
+    grid-area: h3;
+    font-size: var(--FS-XL);
+    text-align: center;
+    color: var(--FC);
+    padding: var(--PADDING) 2rem;
+    margin-top: 0;
+    text-shadow: 2px 1px 3px #000;
+}
+.about p{
+    grid-area: p;
+    font-size: var(--FS);
+    text-align: center;
+    color: var(--FC);
+    padding: var(--PADDING) 2rem;
+    margin-top: 0;
+    
+}
+.about button {
+ 
+  font-size: var(--FS-SM);
+  padding: 1rem 2rem;
+  border-radius: var(--BORDER-RADIUS);
+  border: var(--BORDER);
+  background-color: var(--ALTBGCOLOR);
+  color: var(--FC);
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 6rem;
+  color: whitesmoke;
+}
+#more-about{
+    min-height: 100vh;
+    flex-grow: 1;
+
 }
