@@ -283,72 +283,80 @@ table {
   width: 100%;
   margin: 0 auto;
   margin-top: 2rem;
- 
+
   border-radius: var(--BORDER-RADIUS);
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-tr{
-    text-align:center;
+tr {
+  text-align: center;
 }
-th{
-    text-align:center;
-    text-decoration:underline;
-    font-family:monospace;
+th {
+  text-align: center;
+  text-decoration: underline;
+  font-family: monospace;
 }
-#menu{
-    min-height: 100Vh;
-    border-bottom:var(--BORDER);
+#menu {
+  min-height: 100vh;
+  border-bottom: var(--BORDER);
 }
-#menu h2{
-    text-align:center;
+#menu h2 {
+  text-align: center;
 }
-
 
 /* STYLE FORM */
-form{
-   
-     margin-top:2rem;
-    
+form {
+  margin-top: 2rem;
 }
-form h2{
+form h2 {
+  text-align: center;
+  color: var(--ALTBGCOLOR);
+  text-shadow: 3px 3px 3px #000;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+input {
+  width: 50%;
+  height: 2rem;
+  margin: 1rem;
+  border-radius: var(--BORDER-RADIUS);
+  border: var(--BORDER);
+  padding: 0.5rem;
+}
+textarea {
+  width: 50%;
+  height: 10rem;
+  margin: 1rem;
+  border-radius: var(--BORDER-RADIUS);
+  border: var(--BORDER);
+  padding: 0.5rem;
+}
+fieldset button {
+  width: 10rem;
+  height: 2rem;
+  margin: 1rem;
+  border-radius: var(--BORDER-RADIUS);
+  border: var(--BORDER);
+  padding: 0.5rem;
+  background-color: var(--ALTBGCOLOR);
+  color: var(--FC);
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+/* ||FOOTER */
+
+.footer__address {
+ columns:2 250px;
+}
+.copy{
+    column-span: all;
     text-align:center;
-    color:var(--ALTBGCOLOR);
-    text-shadow: 3px 3px 3px #000;
 }
-fieldset{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    margin-top:2rem;
-}
-input{
-    width:50%;
-    height:2rem;
-    margin:1rem;
-    border-radius:var(--BORDER-RADIUS);
-    border:var(--BORDER);
-    padding:0.5rem;
-}
-textarea{
-    width:50%;
-    height:10rem;
-    margin:1rem;
-    border-radius:var(--BORDER-RADIUS);
-    border:var(--BORDER);
-    padding:0.5rem;
-}
-fieldset  button{
-    width:10rem;
-    height:2rem;
-    margin:1rem;
-    border-radius:var(--BORDER-RADIUS);
-    border:var(--BORDER);
-    padding:0.5rem;
-    background-color:var(--ALTBGCOLOR);
-    color:var(--FC);
-    cursor:pointer;
-    color:whitesmoke;
-   
-}
+
+
