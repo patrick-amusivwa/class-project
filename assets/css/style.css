@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+/* ||RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+image {
+  display: block;
+}
+/* ||VARIABLES */
+:root {
+  /* FONTS */
+  --FF: "Comfortaa", cursive;
+  --FS: clamp(1.75rem, 3vh, 3rem);
+  --FS-SM: clamp(1.5rem, 2vh, 2rem);
+  --FS-XS: clamp(1.25rem, 1.5vh, 1.5rem);
+  --ALTFS: 0.8rem;
+  --FS-XL: 4rem;
+  --FS-XXL: 5rem;
+  /* COLORS */
+  --BGCOLOR1: aliceblue;
+  --ALTBGCOLOR: #e7a331;
+  --FC: #000;
+  /* GENERAL */
+  --BORDER: 2px solid #1e293b;
+  --BORDER-RADIUS: 5px;
+  --SHADOW: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  --PADDING: 1rem;
+}
+body {
+  background-color: var(--BGCOLOR1);
+  font-family: var(--FF);
+  font-size: var(--FS-XS);
+  color: var(--FC);
+  margin: 0 auto;
+}
+
+.nav__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--PADDING);
+  font-size: var(--ALTFS);
+  background-color: var(--BGCOLOR1);
+  border-bottom: var(--BORDER);
+}
+.ul__nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-position: inside;
+  margin: 0 1.5rem;
+  padding-bottom: var(--PADDING);
+  border-bottom: var(--BORDER);
+}
+#hero{
+    background-color: var(--ALTBGCOLOR);
+    background-image:url(../images/hero-bg.jpg);
+    background-size:cover;
+    padding: var(--PADDING);
+    border-bottom: var(--BORDER);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow:column nowrap;
+}
+#hero h2{
+    font-size: var(--FS-XXL);
+    padding-bottom: 3rem;
+    color: aliceblue;
+    text-shadow:3px 3px 3px #000;
+}
+.hero_viewport button{
+    display:block;
+    font-size: var(--FS-SM);
+    padding: 1rem 2rem;
+    border-radius: var(--BORDER-RADIUS);
+    border: var(--BORDER);
+    background-color: var(--ALTBGCOLOR);
+    color: var(--FC);
+     margin:0 auto;
+    cursor: pointer;
+    margin-top:6rem;
+    color:whitesmoke;
+    
+}
+.hero_viewport p{
+    font-size:var(--FS);
+    text-align:center;
+    color:papayawhip;
+    padding: 1rem 2rem;
+    margin-top:2rem;
+    text-shadow:3px 3px 3px #000;
+    
+}
+.hero_viewport h3{
+    font-size:var(--FS);
+    text-align:center;
+    color:papayawhip;
+    padding: 1rem 2rem;
+    margin-top:0;
+    text-shadow:3px 3px 3px #000;
+    
+}
