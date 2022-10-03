@@ -39,7 +39,7 @@ body {
 }
 /* ||HEADER */
 nav {
-  position: top;
+  top:0;
 }
 .offscreen {
   position: absolute;
