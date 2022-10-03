@@ -357,6 +357,8 @@ fieldset button {
 .copy{
     column-span: all;
     text-align:center;
+    Color:white;
+    background-color:#000;
 }
 
 
