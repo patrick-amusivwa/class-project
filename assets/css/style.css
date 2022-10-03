@@ -11,7 +11,6 @@ image {
 /* ||VARIABLES */
 :root {
   /* FONTS */
-  --FFANIMATION:mo
   --FF: "Comfortaa", cursive;
   --FS: clamp(1.75rem, 3vh, 3rem);
   --FS-SM: clamp(1.5rem, 2vh, 2rem);
@@ -20,6 +19,8 @@ image {
   --FS-XL: 4rem;
   --FS-XXL: 5rem;
   --FS-FEW: 8rem;
+  /* ||ANIMATIONS */
+  --FANIM:'Source Code Pro', monospace;
   /* COLORS */
   --BGCOLOR1: aliceblue;
   --ALTBGCOLOR: #e7a331;
@@ -110,7 +111,7 @@ a:active {
 #hero {
   background-color: var(--ALTBGCOLOR);
   background-image: url(../images/hero-bg.jpg);
-  background-size: cover;
+  background-size:cover;
   padding: var(--PADDING);
   border-bottom: var(--BORDER);
   min-height: 100vh;
@@ -146,6 +147,7 @@ a:active {
   text-align: center;
   color: papayawhip;
   text-shadow: 3px 3px 3px #000;
+  font-family:var(--FANIM);
 }
 .hero_viewport h3 {
   font-size: var(--FS);
