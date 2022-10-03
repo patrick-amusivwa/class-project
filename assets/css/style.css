@@ -36,6 +36,7 @@ body {
   margin: 0 auto;
   width: 70%;
 }
+/* ||HEADER */
 nav {
   position: top;
 }
@@ -49,13 +50,16 @@ nav {
 }
 .nav__icons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
   padding: var(--PADDING);
   font-size: var(--ALTFS);
   background-color: var(--BGCOLOR1);
   border-bottom: var(--BORDER);
+  padding-bottom:0;
+  padding-top:3px;
 }
+
 .ul__nav {
   list-style-type: none;
   display: flex;
@@ -66,6 +70,22 @@ nav {
   padding-bottom: var(--PADDING);
   border-bottom: var(--BORDER);
 }
+.nav__icons h2{
+    font-size:var(--ALTFS);
+}
+/* icons size */
+.nav__icons {
+  font-size: var(--FS);
+}
+.nav__icons i:hover{
+    cursor:pointer;
+    color:var(--ALTBGCOLOR);
+}
+
+
+
+
+/* ||hero */
 #hero {
   background-color: var(--ALTBGCOLOR);
   background-image: url(../images/hero-bg.jpg);
