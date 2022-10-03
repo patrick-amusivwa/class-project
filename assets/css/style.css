@@ -187,6 +187,8 @@ nav {
 #more-about {
   min-height: 100vh;
   flex-grow: 1;
+  border-bottom:var(--BORDER);
+  
 }
 #more-about h2 {
   grid-area: hd;
@@ -222,20 +224,23 @@ nav {
   width: 300px;
   height: auto;
   border-radius: var(--BORDER-RADIUS);
-  margin-left: 4rem;
+  margin: 1.5rem;
   display: block;
   aspect-ratio: 1/1;
 }
 #more-about button {
-  display: block;
+
   font-size: var(--FS-SM);
   padding: 1rem 2rem;
   border-radius: var(--BORDER-RADIUS);
   border: var(--BORDER);
   background-color: var(--ALTBGCOLOR);
   color: var(--FC);
-  margin: 0 auto;
+  
   cursor: pointer;
   margin-top: 6rem;
   color: whitesmoke;
+  margin-bottom:20%;
+  margin-left:50%;
+
 }
