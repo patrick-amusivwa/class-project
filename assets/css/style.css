@@ -5,6 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  background-color:hsla(212, 32%, 52%, 0.233);
+  /* smooth scroll */
+  scroll-behavior: smooth;
+}
 image {
   display: block;
 }
@@ -32,9 +37,9 @@ image {
   --PADDING: 1rem;
 
   /* ||ANIMATIONS */
-  --FANIM: "Source Code Pro", monospace;
+  /* --FANIM: "Source Code Pro", monospace;
   --SPEED: 6s;
-  --BLINKING: 350ms;
+  --BLINKING: 350ms; */
 }
 body {
   background-color: var(--BGCOLOR1);
@@ -42,7 +47,7 @@ body {
   font-size: var(--FS-XS);
   color: var(--FC);
   margin: 0 auto;
-  width: 70%;
+  width: 85%;
 }
 /* ||HEADER */
 nav {
@@ -177,15 +182,15 @@ h4 {
   transform: transalteY(4rem);
   /* animation: fadingin 4s ease 8s forwards; */
 }
-.vid-clip {
+/* .vid-clip {
   width: 100%;
   height: 100vh;
   position: relative;
-}
-.vid-clip video {
+} */
+/* .vid-clip video {
   width: 100%;
   height: 100%;
-}
+} */
 /* ||ANIMATION */
 /* .hero_viewport p::before,
 .hero_viewport p::after {
@@ -459,10 +464,29 @@ fieldset button {
 
 .footer__address {
   columns: 2 250px;
+  column-gap: 1rem;
+  text-align:center;
+  /* column border */
+  column-rule: 4px double var(--ALTBGCOLOR);
+  
 }
 .copy {
   column-span: all;
   text-align: center;
   color: white;
   background-color: #000;
+}
+.top{
+  width:50px;
+  height:50px;
+  position:fixed;
+  border-radius:50%;
+  background-color:green;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+.backtotop{
+ margin-left:calc(var(--PADDING) + 400px);
 }
