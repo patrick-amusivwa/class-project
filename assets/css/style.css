@@ -244,3 +244,23 @@ nav {
   margin-left:50%;
 
 }
+/* |DELICACY */
+.pinterest_gallery{
+    columns:3;
+    gap:1.5rem;
+}
+.pinterest{
+    width:100%;
+    border-radius:var(--BORDER-RADIUS);
+    margin-bottom:20px;
+}
+@media screen and (max-width: 768px){
+    .pinterest_gallery{
+        columns:2;
+    }
+}
+@media screen and (max-width: 480px){
+    .pinterest_gallery{
+        columns:1;
+    }
+}
