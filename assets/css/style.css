@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Source+Code+Pro&display=swap');
 /* ||RESET */
 * {
   margin: 0;
@@ -11,6 +11,7 @@ image {
 /* ||VARIABLES */
 :root {
   /* FONTS */
+  --FFANIMATION:mo
   --FF: "Comfortaa", cursive;
   --FS: clamp(1.75rem, 3vh, 3rem);
   --FS-SM: clamp(1.5rem, 2vh, 2rem);
