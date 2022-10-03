@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Source+Code+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Source+Code+Pro&display=swap");
 /* ||RESET */
 * {
   margin: 0;
@@ -19,17 +19,22 @@ image {
   --FS-XL: 4rem;
   --FS-XXL: 5rem;
   --FS-FEW: 8rem;
-  /* ||ANIMATIONS */
-  --FANIM:'Source Code Pro', monospace;
+
   /* COLORS */
   --BGCOLOR1: aliceblue;
   --ALTBGCOLOR: #e7a331;
   --FC: #000;
+
   /* GENERAL */
   --BORDER: 2px solid #1e293b;
   --BORDER-RADIUS: 5px;
   --SHADOW: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   --PADDING: 1rem;
+
+  /* ||ANIMATIONS */
+  --FANIM: "Source Code Pro", monospace;
+  --SPEED: 6s;
+  --BLINKING:350ms;
 }
 body {
   background-color: var(--BGCOLOR1);
@@ -41,7 +46,7 @@ body {
 }
 /* ||HEADER */
 nav {
-  top:0;
+  top: 0;
 }
 .offscreen {
   position: absolute;
@@ -111,7 +116,7 @@ a:active {
 #hero {
   background-color: var(--ALTBGCOLOR);
   background-image: url(../images/hero-bg.jpg);
-  background-size:cover;
+  background-size: cover;
   padding: var(--PADDING);
   border-bottom: var(--BORDER);
   min-height: 100vh;
@@ -147,7 +152,63 @@ a:active {
   text-align: center;
   color: papayawhip;
   text-shadow: 3px 3px 3px #000;
-  font-family:var(--FANIM);
+  font-family: var(--FANIM);
+  width: max-content;
+  position: Relative;
+}
+h4{
+  font-size: var(--FS);
+  text-align: center;
+  color: papayawhip;
+  text-shadow: 3px 3px 3px #000;
+  font-family: var(--FANIM);
+  width: max-content;
+  padding-top:4rem;
+  text-decoration:underline;
+  margin:0 auto;
+  opacity:0;
+  transform:transalteY(4rem);
+  animation:fadingin 4s ease 8s forwards;
+  
+}
+
+/* ||ANIMATION */
+.hero_viewport p::before,
+.hero_viewport p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.hero_viewport p::before {
+  background: url(../images/hero-bg.jpg);
+  animation: write var(--SPEED) steps(21) 2s forwards;
+ ;
+}
+@keyframes write {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blinking  {
+  to{
+    background-color:transparent;
+  }
+}
+@keyframes fadingin {
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+.hero_viewport p::after {
+  width: 0.125em;
+  background-color:var(--ALTBGCOLOR);
+  animation: write var(--SPEED) steps(21) 2s forwards, blinking var(--BLINKING) steps(21) infinite;
+  
+
 }
 .hero_viewport h3 {
   font-size: var(--FS);
