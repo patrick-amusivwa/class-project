@@ -41,6 +41,12 @@ image {
   --SPEED: 6s;
   --BLINKING: 350ms; */
 }
+/* color scheme dark */
+@media screen and (prefers-color-scheme: dark) {
+
+}
+  
+
 body {
   background-color: var(--BGCOLOR1);
   font-family: var(--FF);
@@ -166,6 +172,7 @@ a:active {
   font-family: var(--FF);
   width: 100%;
   position: Relative;
+  animation: write 5s  steps(7) ease 1s forwards;
 }
 h4 {
   font-size: var(--FS);
@@ -180,19 +187,19 @@ h4 {
   opacity: 0;
 
   /* ||||UNECESSARY ANIMATION -IT SHOULD JUST BE A SIMPLE DUMMY */
-  /* animation: fadingin 4s ease 8s forwards; */
+  
 }
-/* .vid-clip {
+.vid-clip {
   width: 100%;
   height: 100vh;
   position: relative;
-} */
-/* .vid-clip video {
+}
+.vid-clip video {
   width: 100%;
   height: 100%;
-} */
+}
 /* ||ANIMATION */
-/* .hero_viewport p::before,
+.hero_viewport p::before,
 .hero_viewport p::after {
   content: "";
   position: absolute;
@@ -220,13 +227,13 @@ h4 {
     opacity: 1;
     transform: translateY(0);
   }
-} */
-/* .hero_viewport p::after {
+}
+.hero_viewport p::after {
   width: 0.125em;
   background-color: var(--ALTBGCOLOR);
   animation: write var(--SPEED) steps(21) 2s forwards,
     blinking var(--BLINKING) steps(21) infinite;
-} */
+}
 .hero_viewport h3 {
   font-size: var(--FS);
   text-align: center;
